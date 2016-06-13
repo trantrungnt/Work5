@@ -26,3 +26,4 @@
 + [How to get the action bar height](http://stackoverflow.com/questions/12301510/how-to-get-the-actionbar-height)
 + [Animation resources](https://developer.android.com/guide/topics/resources/animation-resource.html)
 + [Đơn vị đo trong Android](http://code5s.com/di-dong/android/cc-don-vi-do-trong-android-px-dp-dip-sp-v-dpi.html)
++ [Android bố cục gioa diện UI theo layout](http://laptrinhmobileapp.com/android/huong-dan-bat-dau-lap-trinh-android/android-bo-cuc-giao-dien-ui-layout/)
