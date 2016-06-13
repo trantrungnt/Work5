@@ -11,10 +11,12 @@ import android.util.Log;
 import android.view.WindowManager;
 import android.view.animation.AnimationSet;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnClick;
     private int mWidth, mHeight;
+    private RelativeLayout relLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(displayMatrics);
         mWidth = displayMatrics.widthPixels;
         mHeight = displayMatrics.heightPixels;
+        relLayout = (RelativeLayout) this.findViewById(R.id.relLayout);
     }
 
     @Override
@@ -47,8 +50,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d("ABC", "screen Width: "+ String.valueOf(mWidth));
         Log.d("ABC", "btn Height:" + String.valueOf(btnClick.getHeight()));
         Log.d("ABC", "screen Height: " + String.valueOf(mHeight));
-        ObjectAnimator objectAnimatorX = ObjectAnimator.ofFloat(btnClick, "x", btnClick.getX(), mWidth - btnClick.getWidth());
-        ObjectAnimator objectAnimatorY = ObjectAnimator.ofFloat(btnClick, "y", btnClick.getX(), mHeight - btnClick.getHeight());
+        Log.d("ABC", "relaytive layout Width:" + String.valueOf(relLayout.getWidth()));
+        Log.d("ABC", "relaytive layout Height:" + String.valueOf(relLayout.getHeight()));
+        ObjectAnimator objectAnimatorX = ObjectAnimator.ofFloat(btnClick, "x", btnClick.getWidth(), relLayout.getWidth() - btnClick.getWidth());
+        ObjectAnimator objectAnimatorY = ObjectAnimator.ofFloat(btnClick, "y", btnClick.getHeight(), relLayout.getHeight() - btnClick.getHeight());
         objectAnimatorX.setDuration(5000);
         objectAnimatorY.setDuration(5000);
         AnimatorSet animatorSet = new AnimatorSet();
