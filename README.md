@@ -24,3 +24,4 @@
 
 ##Tham khảo
 + [How to get the action bar height](http://stackoverflow.com/questions/12301510/how-to-get-the-actionbar-height)
++ [Animation resources](https://developer.android.com/guide/topics/resources/animation-resource.html)
