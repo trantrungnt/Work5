@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
  <item>
-    <rotate android:fromDegrees="45" android:toDegrees="45">
-        
+    <rotate android:fromDegrees="45" android:toDegrees="45"
+            android:pivotX="-45%"
+            android:pivotY="90%">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorBackground">
+            </solid>
+            <size android:width="200px" android:height="200px"/>
+        </shape>
     </rotate>
  </item>
 </selector>
