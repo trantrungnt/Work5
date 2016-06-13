@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
     private void initComponent()
     {
         btnClick = (Button) this.findViewById(R.id.btnClick);
+        DisplayMetrics displayMatrics = new DisplayMetrics();
+        ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(displayMatrics);
+        mWidth = displayMatrics.widthPixels;
+        mHeight = displayMatrics.heightPixels;
     }
 
     @Override
@@ -41,12 +45,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d("ABC", "X: "+ String.valueOf(btnClick.getX()));
         Log.d("ABC", "btn Width: "+ String.valueOf(btnClick.getWidth()));
         Log.d("ABC", "screen Width: "+ String.valueOf(mWidth));
-        DisplayMetrics displayMatrics = new DisplayMetrics();
-        ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(displayMatrics);
-        mWidth = displayMatrics.widthPixels;
-        mHeight = displayMatrics.heightPixels;
+        Log.d("ABC", "btn Height:" + String.valueOf(btnClick.getHeight()));
+        Log.d("ABC", "screen Height: " + String.valueOf(mHeight));
         ObjectAnimator objectAnimatorX = ObjectAnimator.ofFloat(btnClick, "x", btnClick.getX(), mWidth - btnClick.getWidth());
-        ObjectAnimator objectAnimatorY = ObjectAnimator.ofFloat(btnClick, "y", btnClick.getX(), mWidth - btnClick.getHeight());
+        ObjectAnimator objectAnimatorY = ObjectAnimator.ofFloat(btnClick, "y", btnClick.getX(), mHeight - btnClick.getHeight());
         objectAnimatorX.setDuration(5000);
         objectAnimatorY.setDuration(5000);
         AnimatorSet animatorSet = new AnimatorSet();
