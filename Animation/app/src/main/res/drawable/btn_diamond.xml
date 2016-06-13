@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate android:fromDegrees="45" android:toDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/colorBackground">
+                </solid>
+                <size android:width="120dp" android:height="120dp">
+                </size>
+            </shape>
+        </rotate>
+    </item>
+</selector>
