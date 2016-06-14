@@ -31,4 +31,5 @@
 + [Android density independent pixel](http://www.pixel-ruler.net/android-density-independent-pixel)
 + [Các đơn vị đo Android](https://androidvndotorg.wordpress.com/2012/11/07/phan-biet-don-vi-do-trong-android-px-dp-dip-sp-and-dpi/)
 + [Display Metrics](https://developer.android.com/reference/android/util/DisplayMetrics.html) 
++ [Understanding density independence in Android](https://www.captechconsulting.com/blogs/understanding-density-independence-in-android)
 
