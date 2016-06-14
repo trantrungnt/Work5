@@ -57,8 +57,11 @@ public class MainActivity extends AppCompatActivity {
         Log.d("ABC", "screen Height: " + String.valueOf(mHeight));
         Log.d("ABC", "relaytive layout Width:" + String.valueOf(relLayout.getWidth()));
         Log.d("ABC", "relaytive layout Height:" + String.valueOf(relLayout.getHeight()));
-        ObjectAnimator objectAnimatorX = ObjectAnimator.ofFloat(btnClick, "x", btnClick.getWidth(), relLayout.getWidth() - btnClick.getWidth());
-        ObjectAnimator objectAnimatorY = ObjectAnimator.ofFloat(btnClick, "y", btnClick.getHeight(), relLayout.getHeight() - btnClick.getHeight());
+//        ObjectAnimator objectAnimatorX = ObjectAnimator.ofFloat(btnClick, "x", btnClick.getWidth(), mWidth - btnClick.getWidth());
+//        ObjectAnimator objectAnimatorY = ObjectAnimator.ofFloat(btnClick, "y", btnClick.getHeight(), mHeight - btnClick.getHeight());
+        ObjectAnimator objectAnimatorX = ObjectAnimator.ofFloat(btnClick, "x", 0, relLayout.getWidth() - btnClick.getWidth());
+        ObjectAnimator objectAnimatorY = ObjectAnimator.ofFloat(btnClick, "y", 0, relLayout.getHeight() - 200);
+
         objectAnimatorX.setDuration(5000);
         objectAnimatorY.setDuration(5000);
         objectAnimatorX.setRepeatMode(Animation.REVERSE);
