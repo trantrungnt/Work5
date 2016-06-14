@@ -3,6 +3,9 @@
 ##Yêu cầu
 ![BTVN-Button biến hình](http://i477.photobucket.com/albums/rr132/trungepu/Cha%20BTVN-Button-Bin%20higravenh%20-%20CanhBX_zpsmod3g6sq.jpg)
 
+##Demo chương trình
++ [Xem tại đây](https://youtu.be/Z6yoa_F4qd4)
+
 ##Chú ý khi code
 + Vẽ hình bình hành
 ```
@@ -32,4 +35,5 @@
 + [Các đơn vị đo Android](https://androidvndotorg.wordpress.com/2012/11/07/phan-biet-don-vi-do-trong-android-px-dp-dip-sp-and-dpi/)
 + [Display Metrics](https://developer.android.com/reference/android/util/DisplayMetrics.html) 
 + [Understanding density independence in Android](https://www.captechconsulting.com/blogs/understanding-density-independence-in-android)
+
 
